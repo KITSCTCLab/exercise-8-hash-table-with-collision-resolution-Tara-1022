@@ -12,9 +12,9 @@ def display_hash(hashtable) -> None:
 		print()
 
 def Hashing(keyvalue) -> int:
-	""""
+	"""
 	Returns the ouput of the hash function for the given key value.
-	""""
+	"""
 	return keyvalue % len(HashTable)
 
 def insert(Hashtable, keyvalue, value) -> None:
