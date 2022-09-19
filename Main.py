@@ -1,6 +1,9 @@
 import re
 
 def display_hash(hashtable) -> None:
+	"""
+	Displays elements stored at each position of the hash table.
+	"""
 	for keyvalue in range(len(hashtable)):
 		content = hashtable[keyvalue]
 		print(keyvalue, end = " ")
@@ -9,9 +12,15 @@ def display_hash(hashtable) -> None:
 		print()
 
 def Hashing(keyvalue) -> int:
+	""""
+	Returns the ouput of the hash function for the given key value.
+	""""
 	return keyvalue % len(HashTable)
 
 def insert(Hashtable, keyvalue, value) -> None:
+	"""
+	Inserts the value at the position of the hastable returned by applying the hash function to keyvalue.
+	"""
 	Hashtable[Hashing(keyvalue)].append(value)
 
 
